@@ -4,7 +4,7 @@ from google import genai
 from dotenv import load_dotenv
 
 # Load Environment Variables
-load_dotenv(".env")
+load_dotenv("../.env")
 
 class GeminiLLM:
 
