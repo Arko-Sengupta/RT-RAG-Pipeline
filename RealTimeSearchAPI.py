@@ -61,7 +61,8 @@ class RealTimeSearch_API:
             logging.error('An error occurred: ', exc_info=e)
             raise e
         
+
+server = RealTimeSearch_API()
 if __name__ == '__main__':
 
-    server = RealTimeSearch_API()
     server.run()
