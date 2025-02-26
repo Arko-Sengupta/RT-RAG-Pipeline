@@ -14,9 +14,9 @@ logging.basicConfig(level=logging.WARNING)
 options = webdriver.ChromeOptions()
 options.add_argument('--headless')  # Run in Headless Mode (Optional)
 options.page_load_timeout = 30
-options.set_script_timeout(30)
 options.set_capability('timeouts', {'implicit': 10})
 driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
+driver.set_script_timeout(30)
 
 class Scraper:
     """
